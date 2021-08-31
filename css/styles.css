@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: grey;
+  overflow: hidden;
+  margin: 0.5rem;
+}
+
+section {
+  padding: 2rem 3rem;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+}
+
+button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 26px;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 0.5rem;
+  background-color: hsl(0, 0%, 95%);
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedan button {
+  color: hsl(31, 77%, 52%);
+  border: 1px solid hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suv button {
+  color: hsl(184, 100%, 22%);
+  border: 1px solid hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+  border: 1px solid hsl(179, 100%, 13%);
+}
+
+button:hover {
+  border-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0);
+  color: hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    padding: 0 10rem;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  button {
+    margin-top: 3rem;
+  }
+}
