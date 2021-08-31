@@ -81,7 +81,7 @@ button:hover {
 
 @media screen and (min-width: 375px) {
   body {
-    padding: 0 10rem;
+    padding: 0 20%;
   }
 
   main {
